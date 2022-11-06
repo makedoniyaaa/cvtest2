@@ -1,0 +1,18 @@
+.social a {
+  color: #fff;
+}
+.socialTitle {
+  color: rgb(255, 255, 255); /*Изменяется цвет текста*/
+  padding-left: 25px;
+  font-size: 30px;
+}
+
+.myHobbyTitle {
+  color: #fff;
+}
+.globalBlock {
+  background-color: rgb(117, 81, 199); /*Изменяется цвет блока*/
+  padding: 10px; /*Расстояние внутренних отступов*/
+  margin: 10px; /*Расстояние внешних отступов*/
+  border-radius: 25px;
+}
