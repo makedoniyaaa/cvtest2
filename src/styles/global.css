@@ -1,18 +1,96 @@
-.social a {
+.socialBlock {
+  border-radius: 25px;
+  padding: 5px;
+  margin: 10px;
+  font-size: 15px;
+  background-color: rgb(53, 119, 163);
   color: #fff;
 }
 .socialTitle {
+  border-radius: 25px;
   color: rgb(255, 255, 255); /*Изменяется цвет текста*/
-  padding-left: 25px;
   font-size: 30px;
+  padding: 40px;
+  margin: 10px;
 }
 
 .myHobbyTitle {
+  border-radius: 25px;
   color: #fff;
 }
-.globalBlock {
-  background-color: rgb(117, 81, 199); /*Изменяется цвет блока*/
+.hobbyBlock {
+  background-color: rgb(101, 158, 151); /*Изменяется цвет блока*/
   padding: 10px; /*Расстояние внутренних отступов*/
   margin: 10px; /*Расстояние внешних отступов*/
+  border-radius: 25px; /*Закругление блока*/
+  padding-left: 30px; /*Внутренний отступ слева*/
+  color: rgb(255, 255, 255); /*Цвет текста*/
+}
+
+.hobbyBlock h2 {
+  color: #fff;
+}
+
+.organizationBlock {
+  background-color: rgb(81, 150, 96);
   border-radius: 25px;
+}
+
+.workExperience {
+  background-color: #fff;
+  color: black;
+}
+
+.workExperience th {
+  padding: 5px;
+}
+
+.avatar {
+  display: flex; /*Выравнивание элементов по горизонтали*/
+  /* flex-direction: column; Выравнивание по вертикали */
+  background-color: rgb(153, 153, 153);
+  color: #fff;
+  border-radius: 25px;
+  margin: 10px;
+  /* justify-content: center; Центральное выравнивание */
+  align-items: center; /*Выравнивание по вертикали*/
+}
+
+.avatar img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 30px;
+}
+
+.aboutMe {
+  margin-left: 30px;
+}
+
+.inputBlock {
+  margin-bottom: 10px;
+  width: 270px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonContact {
+  border-radius: 50px;
+  font-size: 16px;
+  padding: 10px 20px; /*Можно написать одним свойством*/
+  margin-top: 20px;
+  background-color: rgb(35, 37, 37);
+  color: rgb(255, 255, 255);
+  border: 1px solid white; /*Рамка*/
+  transition: 0.2s; /*Время анимации*/
+  cursor: pointer; /*Курсор наведения "пальчик" */
+}
+
+.buttonContact:hover {
+  background-color: #fff;
+  color: black;
+  border-color: black;
+  margin-left: 10px;
+  scale: 1.1; /*Увеличение кнопки*/
 }
