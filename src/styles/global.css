@@ -1,44 +1,83 @@
-.socialBlock {
-  border-radius: 25px;
-  padding: 5px;
-  margin: 10px;
-  font-size: 15px;
-  background-color: rgb(53, 119, 163);
-  color: #fff;
-}
-.socialTitle {
-  border-radius: 25px;
-  color: rgb(255, 255, 255); /*Изменяется цвет текста*/
-  font-size: 30px;
-  padding: 40px;
-  margin: 10px;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.myHobbyTitle {
-  border-radius: 25px;
-  color: #fff;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
-.hobbyBlock {
-  background-color: rgb(101, 158, 151); /*Изменяется цвет блока*/
-  padding: 10px; /*Расстояние внутренних отступов*/
-  margin: 10px; /*Расстояние внешних отступов*/
+
+.main {
+  max-width: 750px;
+  width: 750px;
+}
+
+.itemsBlock {
+  display: flex;
+  flex-wrap: wrap; /*Отвечает за смещение блоков на следующую строку*/
+  justify-content: center;
+  flex-direction: column;
+}
+
+.globalBlock {
+  padding: 20px; /*Расстояние внутренних отступов*/
   border-radius: 25px; /*Закругление блока*/
-  padding-left: 30px; /*Внутренний отступ слева*/
-  color: rgb(255, 255, 255); /*Цвет текста*/
+  margin: 10px; /*Расстояние внешних отступов*/
+  color: rgb(0, 0, 0); /*Цвет текста*/
+  width: 100%; /*Ширина блока*/
+  transition: 0.2s;
+  text-align: center;
 }
 
-.hobbyBlock h2 {
-  color: #fff;
+.globalBlock:hover {
+  scale: 1.1;
+}
+
+.globalBlock h2 {
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.socialBlock {
+  font-size: 15px; /*Размер шрифта*/
+  background-color: #e8fde7;
+  color: black;
+}
+
+.socialBlock a {
+  color: rgba(83, 83, 83, 0.712);
+}
+
+.hobbyBlock {
+  background-color: #fce2e2; /*Изменяется цвет блока*/
+}
+
+.hobbyBlock ol {
+  color: rgba(68, 68, 68, 0.623);
 }
 
 .organizationBlock {
-  background-color: rgb(81, 150, 96);
-  border-radius: 25px;
+  background-color: rgba(173, 136, 171, 0.445);
+  font-size: 20px;
 }
 
-.workExperience {
-  background-color: #fff;
-  color: black;
+.organizationBlock a {
+  color: rgba(83, 83, 83, 0.712);
+  text-decoration: overline;
+}
+
+.workExperienceBlock {
+  background-color: #fef6db;
+}
+
+.workExperienceTable {
+  background-color: rgb(255, 255, 255);
 }
 
 .workExperience th {
@@ -47,25 +86,42 @@
 
 .avatar {
   display: flex; /*Выравнивание элементов по горизонтали*/
-  /* flex-direction: column; Выравнивание по вертикали */
-  background-color: rgb(153, 153, 153);
+  flex-direction: column; /*Выравнивание по вертикали*/
+  background-color: rgba(80, 147, 202, 0.507);
   color: #fff;
   border-radius: 25px;
   margin: 10px;
-  /* justify-content: center; Центральное выравнивание */
+  /* justify-content: center; Центральное горизонтальное выравнивание */
   align-items: center; /*Выравнивание по вертикали*/
+  text-align: center;
+  padding-bottom: 30px;
+  width: 100%;
 }
 
 .avatar img {
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  object-fit: cover;
+  object-fit: unset;
   margin: 30px;
+  transition: 0.2s;
 }
 
-.aboutMe {
-  margin-left: 30px;
+.avatar img:hover {
+  scale: 1.1;
+}
+
+.aboutMe h1 {
+  text-decoration: overline;
+  color: #35395cc4;
+}
+
+.aboutMe p {
+  text-transform: uppercase;
+}
+
+.contactForm {
+  background-color: rgba(90, 162, 196, 0.575);
 }
 
 .inputBlock {
@@ -73,6 +129,55 @@
   width: 270px;
   display: flex;
   justify-content: space-between;
+}
+
+.socialButtonsBlock {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.socialButton {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 20px;
+  text-decoration: overline;
+  color: rgba(53, 53, 53, 0.74);
+}
+
+.socialButton img {
+  margin-right: 10px;
+}
+
+.hobbyButtons {
+  display: flex;
+  justify-content: center;
+}
+
+.hobbyButton {
+  color: #fff;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin: 20px;
+  margin-top: 10px;
+  background-image: linear-gradient(
+    to right top,
+    #bb9da9,
+    #b592a9,
+    #aa88ac,
+    #9980b1,
+    #817ab6,
+    #8283be,
+    #838bc5,
+    #8494cc,
+    #a7add8,
+    #c6c7e5,
+    #e4e2f2,
+    #ffffff
+  );
 }
 
 .buttonContact {

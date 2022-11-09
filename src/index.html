@@ -6,91 +6,109 @@
     <link href="./styles/global.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="avatar">
-      <img src="avatar2.jpg" width="250" alt="тут моё фото" />
-      <div class="aboutMe">
-        <h1>Александр Македонский</h1>
-        <p>
-          Я основатель молодёжной организации
-          <strong>"Молодёжное движение"</strong>
-        </p>
-        <p>Я люблю путешествовать, курить дудку, давать половину</p>
-      </div>
-    </div>
-
-    <div class="socialBlock">
-      <h2 class="socialTitle">Мои социальные сети</h2>
-      <ul>
-        <li>
-          <a href="https://instagram.com/makedoniyaaa" target="_blank"
-            >Instagram</a
-          >
-        </li>
-        <li>
-          <a href="https://t.me/AlexMakedonskiy" target="_blank">Telegram</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="hobbyBlock">
-      <h2 class="title">Мои хобби</h2>
-      <ol>
-        <li>Крепкий дарк и танж</li>
-        <li>Вкусная еда</li>
-        <li>Бетон половина</li>
-      </ol>
+    <div class="main">
+      <div class="avatar">
+        <img src="avatar.jpg" width="250" alt="тут моё фото" />
+        <div class="aboutMe">
+          <h2><em>Hi friends 👋</em></h2>
+          <h3><em>welcome to my little world</em></h3>
+          <h1>Александр Македонский</h1>
+          <p>
+            Я основатель молодёжной организации
+            <strong>"Молодёжное движение"</strong>
+          </p>
+          <p>Люблю путешествовать, учиться и познавать новое</p>
+        </div>
       </div>
 
-      <div class="organizationPage">
-      <h2 class="title">Страница организации</h2>
-      <a href="inst.html">Посмотреть</a>
-      </div>
-
-      <div>
-        <h2 class="title">Опыт работы</h2>
-        <table border="1" class="workExperience" cellpadding="10">
-          <tr>
-            <th>Компания</th>
-            <th>Должность</th>
-            <th>Год</th>
-          </tr>
-          <tr>
-            <td>Epicentr</td>
-            <td>Salesman</td>
-            <td>2017-2022</td>
-          </tr>
-          <tr>
-            <td>School</td>
-            <td>Teacher</td>
-            <td>2022-2022</td>
-          </tr>
-        </table>
-      </div>
-
-      <h2 class="title">Страница организации</h2>
-      <a href="inst.html">Посмотреть</a>
-
-      <h2 class="title">Связаться со мной</h2>
-
-      <form>
-        <div class="inputBlock">
-          <label for="name">Ваше имя:</label>
-          <input type="text" id="name" placeholder="Введите ваше имя..." />
+      <div class="itemsBlock">
+        <div class="socialBlock globalBlock">
+          <h2 class="socialTitle">Мои социальные сети</h2>
+          <div class="socialButtonsBlock">
+            <a
+              href="https://www.instagram.com/makedoniyaaa/"
+              class="socialButton"
+              target="_blank"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
+                width="50"
+                alt="Instagram"
+              />
+              Instagram
+            </a>
+            <a
+              href="https://t.me/makedoniyaaaa"
+              class="socialButton"
+              target="_blank"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png"
+                width="50"
+                alt="Telegram"
+              />
+              Telegram
+            </a>
+          </div>
         </div>
 
-        <div class="inputBlock">
-          <label for="email">Ваш Email:</label>
-          <input type="text" id="email" placeholder="Введите email..." />
+        <div class="hobbyBlock globalBlock">
+          <h2 class="title">Мои хобби</h2>
+          <div class="hobbyButtons">
+            <div class="hobbyButton">Анимация</div>
+            <div class="hobbyButton">Видеомонтаж</div>
+            <div class="hobbyButton">Видеосъёмка</div>
+          </div>
         </div>
 
-        <label for="text">Ваше сообщение:</label>
-        <br />
-        <textarea id="text"></textarea>
+        <div class="organizationBlock globalBlock">
+          <h2 class="title">Страница организации</h2>
+          <a href="inst.html">Посмотреть</a>
+        </div>
 
-        <br />
+        <div class="workExperienceBlock globalBlock">
+          <h2 class="title">Опыт работы</h2>
+          <table border="1" class="workExperienceTable" cellpadding="10">
+            <tr>
+              <th>Компания</th>
+              <th>Должность</th>
+              <th>Год</th>
+            </tr>
+            <tr>
+              <td>Epicentr</td>
+              <td>Salesman</td>
+              <td>2017-2022</td>
+            </tr>
+            <tr>
+              <td>School</td>
+              <td>Teacher</td>
+              <td>2022-2022</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="contactForm globalBlock">
+        <h2 class="title">Связаться со мной</h2>
+        <form>
+          <div class="inputBlock">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" placeholder="Введите ваше имя..." />
+          </div>
 
-        <button type="submit" class="buttonContact">Связаться</button>
-      </form>
+          <div class="inputBlock">
+            <label for="email">Ваш Email:</label>
+            <input type="text" id="email" placeholder="Введите email..." />
+          </div>
+
+          <label for="text">Ваше сообщение:</label>
+          <br />
+          <textarea id="text"></textarea>
+
+          <br />
+
+          <button type="submit" class="buttonContact">Связаться</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
