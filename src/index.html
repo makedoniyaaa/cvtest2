@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <title>Alexander CV</title>
     <link href="./styles/global.css" rel="stylesheet" />
+    <link href="./styles/fonts.css" rel="stylesheet" />
   </head>
-  <body>
+  <body style="background-color: rgba(255, 255, 255, 0.315)">
     <div class="main">
       <div class="avatar">
         <img src="avatar.jpg" width="250" alt="тут моё фото" />
@@ -68,7 +69,7 @@
 
         <div class="workExperienceBlock globalBlock">
           <h2 class="title">Опыт работы</h2>
-          <table border="1" class="workExperienceTable" cellpadding="10">
+          <table rules="1" class="workExperienceTable" cellpadding="10">
             <tr>
               <th>Компания</th>
               <th>Должность</th>
@@ -92,17 +93,27 @@
         <form>
           <div class="inputBlock">
             <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите ваше имя..." />
+            <input
+              class="input"
+              type="text"
+              id="name"
+              placeholder="Введите ваше имя..."
+            />
           </div>
 
           <div class="inputBlock">
             <label for="email">Ваш Email:</label>
-            <input type="text" id="email" placeholder="Введите email..." />
+            <input
+              class="input"
+              type="text"
+              id="email"
+              placeholder="Введите email..."
+            />
           </div>
 
           <label for="text">Ваше сообщение:</label>
           <br />
-          <textarea id="text"></textarea>
+          <textarea class="inputMessage" id="text"></textarea>
 
           <br />
 
